@@ -1,0 +1,229 @@
+body{
+
+  background:radial-gradient(circle at top,#0d1b2a,#0a0f1f);
+
+  color:white;
+
+  font-family:Arial;
+
+  text-align:center;
+
+  margin:0;
+
+  padding:20px;
+
+}
+
+h2{
+
+  color:#00c3ff;
+
+  text-shadow:0 0 12px rgba(0,195,255,0.6);
+
+}
+
+.sistema{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:10px;
+
+}
+
+button{
+
+  padding:12px;
+
+  border:none;
+
+  border-radius:10px;
+
+  margin-top:10px;
+
+  cursor:pointer;
+
+  font-weight:bold;
+
+  transition:0.3s;
+
+}
+
+.sistema button{
+
+  width:120px;
+
+  background:#16213e;
+
+  color:white;
+
+  border:1px solid #00c3ff33;
+
+}
+
+.sistema button.ativo{
+
+  background:#00c3ff;
+
+  box-shadow:0 0 20px #00c3ff;
+
+}
+
+.sistema button:hover{
+
+  transform:scale(1.05);
+
+}
+
+input{
+
+  width:90%;
+
+  padding:10px;
+
+  border-radius:10px;
+
+  border:2px solid #00c3ff;
+
+  background:#111c33;
+
+  color:white;
+
+  margin-top:10px;
+
+  box-shadow:0 0 12px rgba(0,195,255,0.3);
+
+}
+
+.gerar{
+
+  width:90%;
+
+  background:linear-gradient(90deg,#00c3ff,#0066ff);
+
+  color:white;
+
+  display:block;
+
+  margin:10px auto;
+
+  box-shadow:0 0 20px rgba(0,195,255,0.5);
+
+}
+
+.gerar:hover{
+
+  transform:scale(1.05);
+
+  box-shadow:0 0 30px #00c3ff;
+
+}
+
+.bar{
+
+  background:#1b2a49;
+
+  height:15px;
+
+  border-radius:20px;
+
+  margin:5px 0 15px 0;
+
+  overflow:hidden;
+
+}
+
+.fill{
+
+  height:100%;
+
+  background:linear-gradient(90deg,#00c3ff,#007bff);
+
+  box-shadow:0 0 15px #00c3ff;
+
+  animation:animarBarra 0.8s ease;
+
+}
+
+@keyframes animarBarra{
+
+  from{width:0;}
+
+}
+
+.botaoTiro{
+
+  background:#111c33;
+
+  padding:20px;
+
+  border-radius:15px;
+
+  margin-top:20px;
+
+  box-shadow:0 0 25px rgba(0,195,255,0.4);
+
+}
+
+.cardsSO{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:12px;
+
+  margin-top:20px;
+
+}
+
+.card{
+
+  background:#111c33;
+
+  padding:15px;
+
+  border-radius:12px;
+
+  box-shadow:0 0 12px rgba(0,195,255,0.2);
+
+  transition:0.3s;
+
+}
+
+.card:hover{
+
+  transform:scale(1.05);
+
+  box-shadow:0 0 25px #00c3ff;
+
+}
+
+.extra{
+
+  width:90%;
+
+  background:linear-gradient(90deg,#0066ff,#00c3ff);
+
+  color:white;
+
+  margin-top:15px;
+
+  box-shadow:0 0 20px rgba(0,195,255,0.5);
+
+}
+
+.extra:hover{
+
+  transform:scale(1.05);
+
+  box-shadow:0 0 35px #00c3ff;
+
+}
+
+.hidden{
+
+  display:none;
+
+}

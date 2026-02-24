@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="topo">
+
+  <h2>1. Selecione o Sistema Operacional</h2>
+
+  <div class="sistema">
+
+    <button onclick="selecionarSO('Android')" id="androidBtn">Android</button>
+
+    <button onclick="selecionarSO('iOS')" id="iosBtn">iOS</button>
+
+  </div>
+
+  <h2>2. Digite o Modelo do seu Celular</h2>
+
+  <input type="text" id="modelo" placeholder="Ex: Galaxy A54, iPhone 13">
+
+  <h2>3. Escolha o Estilo e Gere</h2>
+
+  <button class="gerar" onclick="gerar('baixa')">Gerar Sensi Baixa</button>
+
+  <button class="gerar" onclick="gerar('media')">Gerar Sensi Média</button>
+
+  <button class="gerar" onclick="gerar('alta')">Gerar Sensi Alta</button>
+
+</div>
+
+<div id="resultado" class="hidden">
+
+  <h2>🎯 Sensibilidade Recomendada</h2>
+
+  <div id="sensibilidades"></div>
+
+  <div class="botaoTiro">
+
+    <p>Botão de Tiro</p>
+
+    <h1 id="botaoTiroValor">0%</h1>
+
+  </div>
+
+  <h2>⚙ Sistema Operacional</h2>
+
+  <div class="cardsSO">
+
+    <div class="card">Vel. Cursor: 108</div>
+
+    <div class="card">Cursor Móvel: Preciso</div>
+
+    <div class="card">Ciclos: 10</div>
+
+    <div class="card">Tolerância: Alta</div>
+
+    <div class="card">Segundos: 1.52s</div>
+
+    <div class="card">Cursor: 104</div>
+
+  </div>
+
+  <button class="extra" onclick="gerarAtual()">Gerar Mais</button>
+
+  <button class="extra" onclick="copiar()">Copiar Sensibilidade</button>
+
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
